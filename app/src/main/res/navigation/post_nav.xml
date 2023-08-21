@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/PostListFrag"
+    android:id="@+id/post_nav">
+
+    <fragment
+        android:id="@+id/PostListFrag"
+        android:name="com.bignerdranch.android.blognerdranch.view.PostListFragment"
+        tools:layout="@layout/fragment_post_list"
+        android:label="Posts">
+
+        <action
+            android:id="@+id/action_PostListFrag_to_PostDetailsFrag"
+            app:destination="@id/PostDetailsFrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PostDetailsFrag"
+        android:name="com.bignerdranch.android.blognerdranch.view.PostDetailsFragment"
+        tools:layout="@layout/fragment_post_details"
+        android:label="{POST_TITLE_ARG}">
+
+        <argument
+            android:name="POST_TITLE_ARG"
+            app:argType="string"
+            android:defaultValue="Post details" />
+
+    </fragment>
+
+</navigation>
