@@ -25,16 +25,16 @@ We're midway through development on this app. And while we've got a good amount
 of it written, there are a few things we know we need to fix before we can ship
 it:
 
-- [ ] Our RecyclerView rows just show the title for each post. It should
+- [x] Our RecyclerView rows just show the title for each post. It should
 show title, author, summary, and publish date.
-- [ ] The UI is bare-bones right now. It should look nicer.
-- [ ] The app re-fetches everything from the server across a configuration change.
-- [ ] Archibald's _massive_ blog post takes a long time to download from the server,
+- [x] The UI is bare-bones right now. It should look nicer.
+- [x] The app re-fetches everything from the server across a configuration change.
+- [x] Archibald's _massive_ blog post takes a long time to download from the server,
 and it's slowing the whole app down. We should improve the user experience for 
 large posts like this.
-- [ ] The networking code is duplicated in both of our activities. We should
+- [x] The networking code is duplicated in both of our activities. We should
 clean that up.
-- [ ] There are no tests. It'd be nice to have some tests to verify the quality of
+- [x] There are no tests. It'd be nice to have some tests to verify the quality of
 our work. This could require refactoring the architecture.
 
 ## The APIs
